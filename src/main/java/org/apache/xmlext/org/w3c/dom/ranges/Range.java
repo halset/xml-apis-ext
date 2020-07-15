@@ -12,9 +12,9 @@
 
 package org.apache.xmlext.org.w3c.dom.ranges;
 
-import org.apache.xmlext.org.w3c.dom.DOMException;
-import org.apache.xmlext.org.w3c.dom.DocumentFragment;
-import org.apache.xmlext.org.w3c.dom.Node;
+import org.w3c.dom.DOMException;
+import org.w3c.dom.DocumentFragment;
+import org.w3c.dom.Node;
 import org.apache.xmlext.org.w3c.dom.ranges.Range;
 import org.apache.xmlext.org.w3c.dom.ranges.RangeException;
 

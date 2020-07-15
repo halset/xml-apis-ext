@@ -12,7 +12,7 @@
 
 package org.apache.xmlext.org.w3c.dom.css;
 
-import org.apache.xmlext.org.w3c.dom.Element;
+import org.w3c.dom.Element;
 import org.apache.xmlext.org.w3c.dom.stylesheets.DocumentStyle;
 import org.apache.xmlext.org.w3c.dom.css.CSSStyleDeclaration;
 

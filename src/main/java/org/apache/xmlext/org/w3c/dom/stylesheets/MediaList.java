@@ -12,7 +12,7 @@
 
 package org.apache.xmlext.org.w3c.dom.stylesheets;
 
-import org.apache.xmlext.org.w3c.dom.DOMException;
+import org.w3c.dom.DOMException;
 
 /**
  *  The <code>MediaList</code> interface provides the abstraction of an 

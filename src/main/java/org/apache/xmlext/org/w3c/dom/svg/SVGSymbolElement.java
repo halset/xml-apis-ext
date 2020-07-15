@@ -1,7 +1,7 @@
 
 package org.apache.xmlext.org.w3c.dom.svg;
 
-import org.apache.xmlext.org.w3c.dom.events.EventTarget;
+import org.w3c.dom.events.EventTarget;
 
 public interface SVGSymbolElement extends 
                SVGElement,

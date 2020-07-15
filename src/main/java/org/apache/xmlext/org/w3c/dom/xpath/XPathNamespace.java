@@ -12,8 +12,8 @@
 
 package org.apache.xmlext.org.w3c.dom.xpath;
 
-import org.apache.xmlext.org.w3c.dom.Element;
-import org.apache.xmlext.org.w3c.dom.Node;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
 
 /**
  * The <code>XPathNamespace</code> interface is returned by 

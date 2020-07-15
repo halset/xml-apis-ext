@@ -12,7 +12,7 @@
 
 package org.apache.xmlext.org.w3c.dom.traversal;
 
-import org.apache.xmlext.org.w3c.dom.Node;
+import org.w3c.dom.Node;
 
 /**
  * Filters are objects that know how to "filter out" nodes. If a 

@@ -12,7 +12,7 @@
 
 package org.apache.xmlext.org.w3c.dom.stylesheets;
 
-import org.apache.xmlext.org.w3c.dom.Node;
+import org.w3c.dom.Node;
 import org.apache.xmlext.org.w3c.dom.stylesheets.MediaList;
 import org.apache.xmlext.org.w3c.dom.stylesheets.StyleSheet;
 

@@ -1,7 +1,7 @@
 
 package org.apache.xmlext.org.w3c.dom.svg;
 
-import org.apache.xmlext.org.w3c.dom.DOMException;
+import org.w3c.dom.DOMException;
 public interface SVGLength {
   // Length Unit Types
   public static final short SVG_LENGTHTYPE_UNKNOWN    = 0;

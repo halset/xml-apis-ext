@@ -12,7 +12,7 @@
 
 package org.apache.xmlext.org.w3c.dom.css;
 
-import org.apache.xmlext.org.w3c.dom.DOMException;
+import org.w3c.dom.DOMException;
 import org.apache.xmlext.org.w3c.dom.css.CSSValue;
 import org.apache.xmlext.org.w3c.dom.css.Counter;
 import org.apache.xmlext.org.w3c.dom.css.RGBColor;

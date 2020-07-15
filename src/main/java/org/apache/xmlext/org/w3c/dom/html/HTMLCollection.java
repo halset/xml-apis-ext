@@ -8,7 +8,7 @@
 package org.apache.xmlext.org.w3c.dom.html;
 
 import org.apache.xmlext.org.w3c.dom.*;
-import org.apache.xmlext.org.w3c.dom.Node;
+import org.w3c.dom.Node;
 
 /**
  * An <code>HTMLCollection</code> is a list of nodes. An individual nodemay be 

@@ -8,7 +8,7 @@
 package org.apache.xmlext.org.w3c.dom.html;
 
 import org.apache.xmlext.org.w3c.dom.*;
-import org.apache.xmlext.org.w3c.dom.Element;
+import org.w3c.dom.Element;
 
 /**
  * All HTML element interfaces derive from this class. Elements that only 

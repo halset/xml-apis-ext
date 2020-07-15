@@ -8,9 +8,9 @@
 package org.apache.xmlext.org.w3c.dom.html;
 
 import org.apache.xmlext.org.w3c.dom.*;
-import org.apache.xmlext.org.w3c.dom.Document;
-import org.apache.xmlext.org.w3c.dom.Element;
-import org.apache.xmlext.org.w3c.dom.NodeList;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
 import org.apache.xmlext.org.w3c.dom.html.HTMLCollection;
 import org.apache.xmlext.org.w3c.dom.html.HTMLElement;
 

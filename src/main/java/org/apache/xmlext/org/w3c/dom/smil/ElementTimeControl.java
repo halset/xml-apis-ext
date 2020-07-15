@@ -12,7 +12,7 @@
  */
 package org.apache.xmlext.org.w3c.dom.smil;
 
-import org.apache.xmlext.org.w3c.dom.DOMException;
+import org.w3c.dom.DOMException;
 
 /**
  * <p><a href='http://www.w3.org/TR/2000/WD-smil-animation-20000731/'>SMILAnimation</a>

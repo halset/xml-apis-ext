@@ -12,8 +12,8 @@
 
 package org.apache.xmlext.org.w3c.dom.traversal;
 
-import org.apache.xmlext.org.w3c.dom.DOMException;
-import org.apache.xmlext.org.w3c.dom.Node;
+import org.w3c.dom.DOMException;
+import org.w3c.dom.Node;
 import org.apache.xmlext.org.w3c.dom.traversal.NodeFilter;
 import org.apache.xmlext.org.w3c.dom.traversal.NodeIterator;
 import org.apache.xmlext.org.w3c.dom.traversal.TreeWalker;

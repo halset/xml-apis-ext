@@ -11,7 +11,7 @@
  */
 package org.apache.xmlext.org.w3c.dom.smil;
 
-import org.apache.xmlext.org.w3c.dom.events.Event;
+import org.w3c.dom.events.Event;
 import org.apache.xmlext.org.w3c.dom.views.AbstractView;
 
 /**

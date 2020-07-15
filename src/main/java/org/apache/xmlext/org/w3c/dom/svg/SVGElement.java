@@ -1,8 +1,8 @@
 
 package org.apache.xmlext.org.w3c.dom.svg;
 
-import org.apache.xmlext.org.w3c.dom.DOMException;
-import org.apache.xmlext.org.w3c.dom.Element;
+import org.w3c.dom.DOMException;
+import org.w3c.dom.Element;
 
 public interface SVGElement extends 
                Element {

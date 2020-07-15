@@ -1,8 +1,8 @@
 
 package org.apache.xmlext.org.w3c.dom.svg;
 
-import org.apache.xmlext.org.w3c.dom.Document;
-import org.apache.xmlext.org.w3c.dom.events.DocumentEvent;
+import org.w3c.dom.Document;
+import org.w3c.dom.events.DocumentEvent;
 
 public interface SVGDocument extends 
                Document,

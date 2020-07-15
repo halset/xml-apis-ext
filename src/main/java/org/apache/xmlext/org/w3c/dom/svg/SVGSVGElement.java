@@ -1,13 +1,13 @@
 
 package org.apache.xmlext.org.w3c.dom.svg;
 
-import org.apache.xmlext.org.w3c.dom.DOMException;
-import org.apache.xmlext.org.w3c.dom.Element;
-import org.apache.xmlext.org.w3c.dom.NodeList;
+import org.w3c.dom.DOMException;
+import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
 import org.apache.xmlext.org.w3c.dom.css.DocumentCSS;
 import org.apache.xmlext.org.w3c.dom.css.ViewCSS;
-import org.apache.xmlext.org.w3c.dom.events.DocumentEvent;
-import org.apache.xmlext.org.w3c.dom.events.EventTarget;
+import org.w3c.dom.events.DocumentEvent;
+import org.w3c.dom.events.EventTarget;
 
 public interface SVGSVGElement extends 
                SVGElement,
