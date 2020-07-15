@@ -7,10 +7,6 @@
 
 package org.apache.xmlext.org.w3c.dom.html;
 
-import org.apache.xmlext.org.w3c.dom.*;
-import org.apache.xmlext.org.w3c.dom.html.HTMLElement;
-import org.apache.xmlext.org.w3c.dom.html.HTMLFormElement;
-
 /**
  * This element is usedfor single-line text input. See the ISINDEX element 
  * definition in HTML 4.0. This element is deprecated in HTML 4.0.

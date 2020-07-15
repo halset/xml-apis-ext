@@ -7,9 +7,6 @@
 
 package org.apache.xmlext.org.w3c.dom.html;
 
-import org.apache.xmlext.org.w3c.dom.*;
-import org.apache.xmlext.org.w3c.dom.html.HTMLElement;
-
 /**
  * Script statements. See the SCRIPT element definition in HTML 4.0.
  */

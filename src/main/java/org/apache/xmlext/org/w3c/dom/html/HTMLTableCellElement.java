@@ -7,9 +7,6 @@
 
 package org.apache.xmlext.org.w3c.dom.html;
 
-import org.apache.xmlext.org.w3c.dom.*;
-import org.apache.xmlext.org.w3c.dom.html.HTMLElement;
-
 /**
  * The object used to represent the <code>TH</code> and <code>TD</code>
  * elements. See the TD element definition in HTML 4.0.

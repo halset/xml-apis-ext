@@ -7,10 +7,6 @@
 
 package org.apache.xmlext.org.w3c.dom.html;
 
-import org.apache.xmlext.org.w3c.dom.*;
-import org.apache.xmlext.org.w3c.dom.html.HTMLCollection;
-import org.apache.xmlext.org.w3c.dom.html.HTMLElement;
-
 /**
  * The <code>FORM</code> element encompasses behavior similar to acollection 
  * and an element. It provides direct access to the containedinput elements 

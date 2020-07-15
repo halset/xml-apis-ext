@@ -7,10 +7,6 @@
 
 package org.apache.xmlext.org.w3c.dom.html;
 
-import org.apache.xmlext.org.w3c.dom.*;
-import org.apache.xmlext.org.w3c.dom.html.HTMLCollection;
-import org.apache.xmlext.org.w3c.dom.html.HTMLElement;
-
 /**
  * A row in a table. See the TR element definition in HTML 4.0.
  */

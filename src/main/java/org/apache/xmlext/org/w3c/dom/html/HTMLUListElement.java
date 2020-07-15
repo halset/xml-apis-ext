@@ -7,9 +7,6 @@
 
 package org.apache.xmlext.org.w3c.dom.html;
 
-import org.apache.xmlext.org.w3c.dom.*;
-import org.apache.xmlext.org.w3c.dom.html.HTMLElement;
-
 /**
  * Unordered list. See the UL element definition in HTML 4.0.
  */

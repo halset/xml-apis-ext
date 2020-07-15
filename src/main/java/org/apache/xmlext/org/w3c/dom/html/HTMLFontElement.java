@@ -7,9 +7,6 @@
 
 package org.apache.xmlext.org.w3c.dom.html;
 
-import org.apache.xmlext.org.w3c.dom.*;
-import org.apache.xmlext.org.w3c.dom.html.HTMLElement;
-
 /**
  * Local change to font. See the FONT element definition in HTML 4.0. This 
  * element is deprecated in HTML 4.0.

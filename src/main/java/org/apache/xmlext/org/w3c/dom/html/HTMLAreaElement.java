@@ -7,9 +7,6 @@
 
 package org.apache.xmlext.org.w3c.dom.html;
 
-import org.apache.xmlext.org.w3c.dom.*;
-import org.apache.xmlext.org.w3c.dom.html.HTMLElement;
-
 /**
  * Client-side image map area definition. See the AREA element definition in 
  * HTML 4.0.

@@ -7,10 +7,6 @@
 
 package org.apache.xmlext.org.w3c.dom.html;
 
-import org.apache.xmlext.org.w3c.dom.*;
-import org.apache.xmlext.org.w3c.dom.html.HTMLElement;
-import org.apache.xmlext.org.w3c.dom.html.HTMLFormElement;
-
 /**
  * Push button. See the BUTTON element definition in HTML 4.0.
  */

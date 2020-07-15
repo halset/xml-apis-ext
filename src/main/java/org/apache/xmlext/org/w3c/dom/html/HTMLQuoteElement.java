@@ -7,9 +7,6 @@
 
 package org.apache.xmlext.org.w3c.dom.html;
 
-import org.apache.xmlext.org.w3c.dom.*;
-import org.apache.xmlext.org.w3c.dom.html.HTMLElement;
-
 /**
  * For the <code>Q</code> and <code>BLOCKQUOTE</code> elements. See the Q 
  * element definition in HTML 4.0.

@@ -7,11 +7,6 @@
 
 package org.apache.xmlext.org.w3c.dom.html;
 
-import org.apache.xmlext.org.w3c.dom.*;
-import org.apache.xmlext.org.w3c.dom.html.HTMLCollection;
-import org.apache.xmlext.org.w3c.dom.html.HTMLElement;
-import org.apache.xmlext.org.w3c.dom.html.HTMLFormElement;
-
 /**
  * The select element allows the selection of an option. The containedoptions 
  * can be directly accessed through the select element as acollection. See 

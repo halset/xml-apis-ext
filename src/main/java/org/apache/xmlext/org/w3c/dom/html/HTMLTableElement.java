@@ -7,12 +7,6 @@
 
 package org.apache.xmlext.org.w3c.dom.html;
 
-import org.apache.xmlext.org.w3c.dom.*;
-import org.apache.xmlext.org.w3c.dom.html.HTMLCollection;
-import org.apache.xmlext.org.w3c.dom.html.HTMLElement;
-import org.apache.xmlext.org.w3c.dom.html.HTMLTableCaptionElement;
-import org.apache.xmlext.org.w3c.dom.html.HTMLTableSectionElement;
-
 /**
  * The create* and delete* methods on the table allow authors to constructand 
  * modify tables. HTML 4.0 specifies that only one of each of the 

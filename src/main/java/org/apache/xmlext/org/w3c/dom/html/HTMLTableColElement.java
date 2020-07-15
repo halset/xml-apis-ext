@@ -7,9 +7,6 @@
 
 package org.apache.xmlext.org.w3c.dom.html;
 
-import org.apache.xmlext.org.w3c.dom.*;
-import org.apache.xmlext.org.w3c.dom.html.HTMLElement;
-
 /**
  * Regroups the <code>COL</code> and <code>COLGROUP</code> elements. See the 
  * COL element definition in HTML 4.0.

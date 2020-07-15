@@ -7,10 +7,6 @@
 
 package org.apache.xmlext.org.w3c.dom.html;
 
-import org.apache.xmlext.org.w3c.dom.*;
-import org.apache.xmlext.org.w3c.dom.html.HTMLElement;
-import org.apache.xmlext.org.w3c.dom.html.HTMLFormElement;
-
 /**
  * Generic embedded object. Note. In principle, allproperties on the object 
  * element are read-write but in someenvironments some properties may be 

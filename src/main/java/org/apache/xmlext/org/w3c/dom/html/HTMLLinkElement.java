@@ -7,9 +7,6 @@
 
 package org.apache.xmlext.org.w3c.dom.html;
 
-import org.apache.xmlext.org.w3c.dom.*;
-import org.apache.xmlext.org.w3c.dom.html.HTMLElement;
-
 /**
  * The <code>LINK</code> element specifies a link to an externalresource, and 
  * defines this document's relationship to that resource(or vice versa).  See 
