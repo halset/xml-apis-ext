@@ -18,11 +18,12 @@
 
 package javax.xml.validation;
 
-import org.w3c.dom.ls.LSResourceResolver;
-import org.xml.sax.ContentHandler;
-import org.xml.sax.ErrorHandler;
-import org.xml.sax.SAXNotRecognizedException;
-import org.xml.sax.SAXNotSupportedException;
+import org.apache.xmlext.org.w3c.dom.ls.LSResourceResolver;
+import org.apache.xmlext.org.xml.sax.ContentHandler;
+import org.apache.xmlext.org.xml.sax.ErrorHandler;
+import org.apache.xmlext.org.xml.sax.SAXNotRecognizedException;
+import org.apache.xmlext.org.xml.sax.SAXNotSupportedException;
+import org.xml.sax.Attributes;
 
 /**
  * Streaming validator that works on SAX stream.
@@ -59,7 +60,7 @@ import org.xml.sax.SAXNotSupportedException;
  *      bindings, the user-specified {@link ContentHandler} will receive
  *      additional startPrefixMapping/endPrefixMapping events.
  * 
- *  <li>{@link org.xml.sax.Attributes} for the
+ *  <li>{@link org.apache.xmlext.org.xml.sax.Attributes} for the
  *      {@link ContentHandler#startElement(String,String,String,Attributes)} method
  *      may or may not include xmlns* attributes.
  * </ol>
@@ -81,10 +82,10 @@ import org.xml.sax.SAXNotSupportedException;
  * When this feature is set to true, it must make
  * sure that the user's {@link ContentHandler} will see 
  * the corresponding <code>xmlns*</code> attribute in
- * the {@link org.xml.sax.Attributes} object of the
+ * the {@link org.apache.xmlext.org.xml.sax.Attributes} object of the
  * {@link ContentHandler#startElement(String,String,String,Attributes)}
  * callback. Otherwise, <code>xmlns*</code> attributes must not be
- * added to {@link org.xml.sax.Attributes} that's passed to the
+ * added to {@link org.apache.xmlext.org.xml.sax.Attributes} that's passed to the
  * user-specified {@link ContentHandler}.
  * <p> 
  * (Note that regardless of this switch, namespace bindings are
@@ -196,7 +197,7 @@ public abstract class ValidatorHandler implements ContentHandler {
      * 
      * <p>
      * The error handler can abort further validation immediately
-     * by throwing {@link org.xml.sax.SAXException} from the handler. Or for example
+     * by throwing {@link org.apache.xmlext.org.xml.sax.SAXException} from the handler. Or for example
      * it can print an error to the screen and try to continue the
      * validation by returning normally from the {@link ErrorHandler} 
      * 
@@ -207,7 +208,7 @@ public abstract class ValidatorHandler implements ContentHandler {
      * 
      * <p>
      * {@link ValidatorHandler} is not allowed to
-     * throw {@link org.xml.sax.SAXException} without first reporting it to
+     * throw {@link org.apache.xmlext.org.xml.sax.SAXException} without first reporting it to
      * {@link ErrorHandler}.
      * 
      * <p>
@@ -215,13 +216,13 @@ public abstract class ValidatorHandler implements ContentHandler {
      * behave as if the following {@link ErrorHandler} is set:
      * <pre>
      * class DraconianErrorHandler implements {@link ErrorHandler} {
-     *     public void fatalError( {@link org.xml.sax.SAXParseException} e ) throws {@link org.xml.sax.SAXException} {
+     *     public void fatalError( {@link org.apache.xmlext.org.xml.sax.SAXParseException} e ) throws {@link org.apache.xmlext.org.xml.sax.SAXException} {
      *         throw e;
      *     }
-     *     public void error( {@link org.xml.sax.SAXParseException} e ) throws {@link org.xml.sax.SAXException} {
+     *     public void error( {@link org.apache.xmlext.org.xml.sax.SAXParseException} e ) throws {@link org.apache.xmlext.org.xml.sax.SAXException} {
      *         throw e;
      *     }
-     *     public void warning( {@link org.xml.sax.SAXParseException} e ) throws {@link org.xml.sax.SAXException} {
+     *     public void warning( {@link org.apache.xmlext.org.xml.sax.SAXParseException} e ) throws {@link org.apache.xmlext.org.xml.sax.SAXException} {
      *         // noop
      *     }
      * }
@@ -264,7 +265,7 @@ public abstract class ValidatorHandler implements ContentHandler {
      * behave as if the following {@link LSResourceResolver} is set:
      * <pre>
      * class DumbLSResourceResolver implements {@link LSResourceResolver} {
-     *     public {@link org.w3c.dom.ls.LSInput} resolveResource(
+     *     public {@link org.apache.xmlext.org.w3c.dom.ls.LSInput} resolveResource(
      *         String publicId, String systemId, String baseURI) {
      *         
      *         return null; // always return null
@@ -317,7 +318,7 @@ public abstract class ValidatorHandler implements ContentHandler {
      * 
      * @return
      *      null if the validator / schema language does not support
-     *      the notion of {@link org.w3c.dom.TypeInfo}.
+     *      the notion of {@link org.apache.xmlext.org.w3c.dom.TypeInfo}.
      *      Otherwise a non-null valid {@link TypeInfoProvider}.
      */
     public abstract TypeInfoProvider getTypeInfoProvider();
@@ -337,9 +338,9 @@ public abstract class ValidatorHandler implements ContentHandler {
      *
      * @param name The feature name, which is a non-null fully-qualified URI.
      * @return The current value of the feature (true or false).
-     * @exception org.xml.sax.SAXNotRecognizedException If the feature
+     * @exception org.apache.xmlext.org.xml.sax.SAXNotRecognizedException If the feature
      *            value can't be assigned or retrieved.
-     * @exception org.xml.sax.SAXNotSupportedException When the
+     * @exception org.apache.xmlext.org.xml.sax.SAXNotSupportedException When the
      *            {@link ValidatorHandler} recognizes the feature name but 
      *            cannot determine its value at this time.
      * @throws NullPointerException
@@ -370,9 +371,9 @@ public abstract class ValidatorHandler implements ContentHandler {
      * @param name The feature name, which is a non-null fully-qualified URI.
      * @param value The requested value of the feature (true or false).
      * 
-     * @exception org.xml.sax.SAXNotRecognizedException If the feature
+     * @exception org.apache.xmlext.org.xml.sax.SAXNotRecognizedException If the feature
      *            value can't be assigned or retrieved.
-     * @exception org.xml.sax.SAXNotSupportedException When the
+     * @exception org.apache.xmlext.org.xml.sax.SAXNotSupportedException When the
      *            {@link ValidatorHandler} recognizes the feature name but 
      *            cannot set the requested value.
      * @throws NullPointerException
@@ -402,9 +403,9 @@ public abstract class ValidatorHandler implements ContentHandler {
      * @param name The property name, which is a non-null fully-qualified URI.
      * @param object The requested value for the property.
      * 
-     * @exception org.xml.sax.SAXNotRecognizedException If the property
+     * @exception org.apache.xmlext.org.xml.sax.SAXNotRecognizedException If the property
      *            value can't be assigned or retrieved.
-     * @exception org.xml.sax.SAXNotSupportedException When the
+     * @exception org.apache.xmlext.org.xml.sax.SAXNotSupportedException When the
      *            {@link ValidatorHandler} recognizes the property name but 
      *            cannot set the requested value.
      * @throws NullPointerException
@@ -433,9 +434,9 @@ public abstract class ValidatorHandler implements ContentHandler {
      *
      * @param name The property name, which is a non-null fully-qualified URI.
      * @return The current value of the property.
-     * @exception org.xml.sax.SAXNotRecognizedException If the property
+     * @exception org.apache.xmlext.org.xml.sax.SAXNotRecognizedException If the property
      *            value can't be assigned or retrieved.
-     * @exception org.xml.sax.SAXNotSupportedException When the
+     * @exception org.apache.xmlext.org.xml.sax.SAXNotSupportedException When the
      *            XMLReader recognizes the property name but 
      *            cannot determine its value at this time.
      * @throws NullPointerException

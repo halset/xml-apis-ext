@@ -20,7 +20,9 @@
 package javax.xml.transform.dom;
 
 import javax.xml.transform.Result;
-import org.w3c.dom.Node;
+
+import org.apache.xmlext.org.w3c.dom.Node;
+import org.w3c.dom.DocumentFragment;
 
 /**
  * <p>Acts as a holder for a transformation result tree in the form of a Document Object Model (DOM) tree.</p>
@@ -57,9 +59,9 @@ public class DOMResult implements Result {
      * <p>Use a DOM node to create a new output target.</p>
      * 
      * <p>In practice, the node should be
-     * a {@link org.w3c.dom.Document} node,
-     * a {@link org.w3c.dom.DocumentFragment} node, or
-     * a {@link org.w3c.dom.Element} node.
+     * a {@link org.apache.xmlext.org.w3c.dom.Document} node,
+     * a {@link org.apache.xmlext.org.w3c.dom.DocumentFragment} node, or
+     * a {@link org.apache.xmlext.org.w3c.dom.Element} node.
      * In other words, a node that accepts children.</p>
      *
      * <p><code>siblingNode</code> and
@@ -78,9 +80,9 @@ public class DOMResult implements Result {
      * <p>Use a DOM node to create a new output target with the specified System ID.<p>
      * 
      * <p>In practice, the node should be
-     * a {@link org.w3c.dom.Document} node,
-     * a {@link org.w3c.dom.DocumentFragment} node, or
-     * a {@link org.w3c.dom.Element} node.
+     * a {@link org.apache.xmlext.org.w3c.dom.Document} node,
+     * a {@link org.apache.xmlext.org.w3c.dom.DocumentFragment} node, or
+     * a {@link org.apache.xmlext.org.w3c.dom.Element} node.
      * In other words, a node that accepts children.</p>
      *
      * <p><code>siblingNode</code> will be set to <code>null</code>.</p>
@@ -98,9 +100,9 @@ public class DOMResult implements Result {
      * <p>Use a DOM node to create a new output target specifying the child node where the result nodes should be inserted before.</p>
      * 
      * <p>In practice, <code>node</code> and <code>nextSibling</code> should be
-     * a {@link org.w3c.dom.Document} node,
-     * a {@link org.w3c.dom.DocumentFragment} node, or
-     * a {@link org.w3c.dom.Element} node.
+     * a {@link org.apache.xmlext.org.w3c.dom.Document} node,
+     * a {@link org.apache.xmlext.org.w3c.dom.DocumentFragment} node, or
+     * a {@link org.apache.xmlext.org.w3c.dom.Element} node.
      * In other words, a node that accepts children.</p>
      * 
      * <p>Use <code>nextSibling</code> to specify the child node 
@@ -148,9 +150,9 @@ public class DOMResult implements Result {
      * the specified System ID.</p>
      * 
      * <p>In practice, <code>node</code> and <code>nextSibling</code> should be
-     * a {@link org.w3c.dom.Document} node,
-     * a {@link org.w3c.dom.DocumentFragment} node, or a
-     * {@link org.w3c.dom.Element} node.
+     * a {@link org.apache.xmlext.org.w3c.dom.Document} node,
+     * a {@link org.apache.xmlext.org.w3c.dom.DocumentFragment} node, or a
+     * {@link org.apache.xmlext.org.w3c.dom.Element} node.
      * In other words, a node that accepts children.</p>
      *
      * <p>Use <code>nextSibling</code> to specify the child node 
@@ -196,9 +198,9 @@ public class DOMResult implements Result {
      * <p>Set the node that will contain the result DOM tree.<p>
      * 
      * <p>In practice, the node should be
-     * a {@link org.w3c.dom.Document} node,
-     * a {@link org.w3c.dom.DocumentFragment} node, or
-     * a {@link org.w3c.dom.Element} node.
+     * a {@link org.apache.xmlext.org.w3c.dom.Document} node,
+     * a {@link org.apache.xmlext.org.w3c.dom.DocumentFragment} node, or
+     * a {@link org.apache.xmlext.org.w3c.dom.Element} node.
      * In other words, a node that accepts children.</p>
      * 
      * <p>An <code>IllegalStateException</code> is thrown if <code>nextSibling</code> is not <code>null</code> and

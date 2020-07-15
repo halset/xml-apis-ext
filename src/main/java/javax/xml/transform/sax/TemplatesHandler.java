@@ -21,7 +21,7 @@ package javax.xml.transform.sax;
 
 import javax.xml.transform.*;
 
-import org.xml.sax.ContentHandler;
+import org.apache.xmlext.org.xml.sax.ContentHandler;
 
 /**
  * A SAX ContentHandler that may be used to process SAX

@@ -21,9 +21,10 @@ package javax.xml.parsers;
 
 import javax.xml.validation.Schema;
 
-import org.xml.sax.SAXException;
-import org.xml.sax.SAXNotRecognizedException;
-import org.xml.sax.SAXNotSupportedException;
+import org.apache.xmlext.org.xml.sax.SAXException;
+import org.apache.xmlext.org.xml.sax.SAXNotRecognizedException;
+import org.apache.xmlext.org.xml.sax.SAXNotSupportedException;
+import org.xml.sax.SAXParseException;
 
 /**
  * Defines a factory API that enables applications to configure and
@@ -241,7 +242,7 @@ public abstract class SAXParserFactory {
 	 *     <code>true</code>: the implementation will limit XML processing to conform to implementation limits.
 	 *     Examples include entity expansion limits and XML Schema constructs that would consume large amounts of resources.
 	 *     If XML processing is limited for security reasons, it will be reported via a call to the registered
-	 *     {@link org.xml.sax.ErrorHandler#fatalError(SAXParseException exception)}.
+	 *     {@link org.apache.xmlext.org.xml.sax.ErrorHandler#fatalError(SAXParseException exception)}.
 	 *     See {@link SAXParser} <code>parse</code> methods for handler specification.
 	 *   </li>
 	 *   <li>
@@ -262,7 +263,7 @@ public abstract class SAXParserFactory {
      *            property.
      * @throws NullPointerException If the <code>name</code> parameter is null.
      *
-     * @see org.xml.sax.XMLReader#setFeature
+     * @see org.apache.xmlext.org.xml.sax.XMLReader#setFeature
      */
     public abstract void setFeature(String name, boolean value)
         throws ParserConfigurationException, SAXNotRecognizedException,
@@ -281,7 +282,7 @@ public abstract class SAXParserFactory {
      * @exception SAXNotRecognizedException When the underlying XMLReader does not recognize the property name.
      * @exception SAXNotSupportedException When the underlying XMLReader recognizes the property name but doesn't support the property.
      *
-     * @see org.xml.sax.XMLReader#getProperty
+     * @see org.apache.xmlext.org.xml.sax.XMLReader#getProperty
      */
     public abstract boolean getFeature(String name)
         throws ParserConfigurationException, SAXNotRecognizedException,
@@ -325,7 +326,7 @@ public abstract class SAXParserFactory {
      * 
      * <p>When warnings/errors/fatal errors are found by the validator, the parser must
      * handle them as if those errors were found by the parser itself. 
-     * In other words, if the user-specified {@link org.xml.sax.ErrorHandler}
+     * In other words, if the user-specified {@link org.apache.xmlext.org.xml.sax.ErrorHandler}
      * is set, it must receive those errors, and if not, they must be
      * treated according to the implementation specific
      * default error handling rules.

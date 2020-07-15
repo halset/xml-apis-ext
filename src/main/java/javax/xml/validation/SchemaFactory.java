@@ -25,11 +25,12 @@ import java.net.URL;
 import javax.xml.transform.Source;
 import javax.xml.transform.stream.StreamSource;
 
-import org.w3c.dom.ls.LSResourceResolver;
-import org.xml.sax.ErrorHandler;
-import org.xml.sax.SAXException;
-import org.xml.sax.SAXNotRecognizedException;
-import org.xml.sax.SAXNotSupportedException;
+import org.apache.xmlext.org.w3c.dom.ls.LSResourceResolver;
+import org.apache.xmlext.org.xml.sax.ErrorHandler;
+import org.apache.xmlext.org.xml.sax.SAXException;
+import org.apache.xmlext.org.xml.sax.SAXNotRecognizedException;
+import org.apache.xmlext.org.xml.sax.SAXNotSupportedException;
+import org.xml.sax.SAXParseException;
 
 /**
  * Factory that creates {@link Schema} objects&#x2E; Entry-point to
@@ -249,9 +250,9 @@ public abstract class SchemaFactory {
      *
      * @param name The feature name, which is a non-null fully-qualified URI.
      * @return The current value of the feature (true or false).
-     * @exception org.xml.sax.SAXNotRecognizedException If the feature
+     * @exception org.apache.xmlext.org.xml.sax.SAXNotRecognizedException If the feature
      *            value can't be assigned or retrieved.
-     * @exception org.xml.sax.SAXNotSupportedException When the
+     * @exception org.apache.xmlext.org.xml.sax.SAXNotSupportedException When the
      *            {@link SchemaFactory} recognizes the feature name but 
      *            cannot determine its value at this time.
      * @exception NullPointerException
@@ -297,9 +298,9 @@ public abstract class SchemaFactory {
      * @param name The feature name, which is a non-null fully-qualified URI.
      * @param value The requested value of the feature (true or false).
      * 
-     * @exception org.xml.sax.SAXNotRecognizedException If the feature
+     * @exception org.apache.xmlext.org.xml.sax.SAXNotRecognizedException If the feature
      *            value can't be assigned or retrieved.
-     * @exception org.xml.sax.SAXNotSupportedException When the
+     * @exception org.apache.xmlext.org.xml.sax.SAXNotSupportedException When the
      *            {@link SchemaFactory} recognizes the feature name but 
      *            cannot set the requested value.
      * @exception NullPointerException
@@ -327,9 +328,9 @@ public abstract class SchemaFactory {
      *
      * @param name The property name, which is a non-null fully-qualified URI.
      * @param object The requested value for the property.
-     * @exception org.xml.sax.SAXNotRecognizedException If the property
+     * @exception org.apache.xmlext.org.xml.sax.SAXNotRecognizedException If the property
      *            value can't be assigned or retrieved.
-     * @exception org.xml.sax.SAXNotSupportedException When the
+     * @exception org.apache.xmlext.org.xml.sax.SAXNotSupportedException When the
      *            {@link SchemaFactory} recognizes the property name but 
      *            cannot set the requested value.
      * @exception NullPointerException
@@ -358,9 +359,9 @@ public abstract class SchemaFactory {
      *
      * @param name The property name, which is a non-null fully-qualified URI.
      * @return The current value of the property.
-     * @exception org.xml.sax.SAXNotRecognizedException If the property
+     * @exception org.apache.xmlext.org.xml.sax.SAXNotRecognizedException If the property
      *            value can't be assigned or retrieved.
-     * @exception org.xml.sax.SAXNotSupportedException When the
+     * @exception org.apache.xmlext.org.xml.sax.SAXNotSupportedException When the
      *            XMLReader recognizes the property name but 
      *            cannot determine its value at this time.
      * @exception NullPointerException
@@ -411,13 +412,13 @@ public abstract class SchemaFactory {
      * behave as if the following {@link ErrorHandler} is set:
      * <pre>
      * class DraconianErrorHandler implements {@link ErrorHandler} {
-     *     public void fatalError( {@link org.xml.sax.SAXParseException} e ) throws {@link SAXException} {
+     *     public void fatalError( {@link org.apache.xmlext.org.xml.sax.SAXParseException} e ) throws {@link SAXException} {
      *         throw e;
      *     }
-     *     public void error( {@link org.xml.sax.SAXParseException} e ) throws {@link SAXException} {
+     *     public void error( {@link org.apache.xmlext.org.xml.sax.SAXParseException} e ) throws {@link SAXException} {
      *         throw e;
      *     }
-     *     public void warning( {@link org.xml.sax.SAXParseException} e ) throws {@link SAXException} {
+     *     public void warning( {@link org.apache.xmlext.org.xml.sax.SAXParseException} e ) throws {@link SAXException} {
      *         // noop
      *     }
      * }
@@ -469,7 +470,7 @@ public abstract class SchemaFactory {
      * behave as if the following {@link LSResourceResolver} is set:
      * <pre>
      * class DumbDOMResourceResolver implements {@link LSResourceResolver} {
-     *     public {@link org.w3c.dom.ls.LSInput} resolveResource(
+     *     public {@link org.apache.xmlext.org.w3c.dom.ls.LSInput} resolveResource(
      *         String publicId, String systemId, String baseURI) {
      *         
      *         return null; // always return null

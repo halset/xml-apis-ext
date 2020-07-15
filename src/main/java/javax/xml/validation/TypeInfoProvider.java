@@ -18,7 +18,7 @@
 
 package javax.xml.validation;
 
-import org.w3c.dom.TypeInfo;
+import org.apache.xmlext.org.w3c.dom.TypeInfo;
 
 /**
  * This class provides access to the type information determined
@@ -36,7 +36,7 @@ import org.w3c.dom.TypeInfo;
  * 
  * @author  <a href="mailto:Kohsuke.Kawaguchi@Sun.com">Kohsuke Kawaguchi</a>
  * @version $Revision: 884939 $, $Date: 2009-11-27 13:20:46 -0500 (Fri, 27 Nov 2009) $
- * @see org.w3c.dom.TypeInfo 
+ * @see org.apache.xmlext.org.w3c.dom.TypeInfo 
  * @since 1.5
  */
 public abstract class TypeInfoProvider {
@@ -55,11 +55,11 @@ public abstract class TypeInfoProvider {
      * 
      * <p>
      * The method may only be called by the startElement and endElement event of
-     * the {@link org.xml.sax.ContentHandler} that the application sets to the
+     * the {@link org.apache.xmlext.org.xml.sax.ContentHandler} that the application sets to the
      * {@link ValidatorHandler}.</p>
      * 
      * @throws IllegalStateException
-     *      If this method is called from other {@link org.xml.sax.ContentHandler}
+     *      If this method is called from other {@link org.apache.xmlext.org.xml.sax.ContentHandler}
      *      methods.
      * @return
      *      An immutable {@link TypeInfo} object that represents the
@@ -82,18 +82,18 @@ public abstract class TypeInfoProvider {
      * 
      * <p>
      * The method may only be called by the startElement event of
-     * the {@link org.xml.sax.ContentHandler} that the application sets to the
+     * the {@link org.apache.xmlext.org.xml.sax.ContentHandler} that the application sets to the
      * {@link ValidatorHandler}.
      * 
      * @param index
      *      The index of the attribute. The same index for
-     *      the {@link org.xml.sax.Attributes} object passed to the
+     *      the {@link org.apache.xmlext.org.xml.sax.Attributes} object passed to the
      *      <tt>startElement</tt> callback.
      * 
      * @throws IndexOutOfBoundsException
      *      If the index is invalid.
      * @throws IllegalStateException
-     *      If this method is called from other {@link org.xml.sax.ContentHandler}
+     *      If this method is called from other {@link org.apache.xmlext.org.xml.sax.ContentHandler}
      *      methods.
      * 
      * @return
@@ -120,22 +120,22 @@ public abstract class TypeInfoProvider {
      * 
      * <p>
      * A {@link javax.xml.parsers.DocumentBuilder} uses this information
-     * to properly implement {@link org.w3c.dom.Attr#isId()}.
+     * to properly implement {@link org.apache.xmlext.org.w3c.dom.Attr#isId()}.
      * 
      * <p>
      * The method may only be called by the startElement event of
-     * the {@link org.xml.sax.ContentHandler} that the application sets to the
+     * the {@link org.apache.xmlext.org.xml.sax.ContentHandler} that the application sets to the
      * {@link ValidatorHandler}.
      * 
      * @param index
      *      The index of the attribute. The same index for
-     *      the {@link org.xml.sax.Attributes} object passed to the
+     *      the {@link org.apache.xmlext.org.xml.sax.Attributes} object passed to the
      *      <tt>startElement</tt> callback.
      * 
      * @throws IndexOutOfBoundsException
      *      If the index is invalid.
      * @throws IllegalStateException
-     *      If this method is called from other {@link org.xml.sax.ContentHandler}
+     *      If this method is called from other {@link org.apache.xmlext.org.xml.sax.ContentHandler}
      *      methods.
      * 
      * @return true
@@ -149,11 +149,11 @@ public abstract class TypeInfoProvider {
      * <p>
      * This method provides information necessary for
      * a {@link javax.xml.parsers.DocumentBuilder} to determine what
-     * the DOM tree should return from the {@link org.w3c.dom.Attr#getSpecified()} method.
+     * the DOM tree should return from the {@link org.apache.xmlext.org.w3c.dom.Attr#getSpecified()} method.
      * 
      * <p>
      * The method may only be called by the startElement event of
-     * the {@link org.xml.sax.ContentHandler} that the application sets to the
+     * the {@link org.apache.xmlext.org.xml.sax.ContentHandler} that the application sets to the
      * {@link ValidatorHandler}.
      * 
      * <p>
@@ -163,13 +163,13 @@ public abstract class TypeInfoProvider {
      * 
      * @param index
      *      The index of the attribute. The same index for
-     *      the {@link org.xml.sax.Attributes} object passed to the
+     *      the {@link org.apache.xmlext.org.xml.sax.Attributes} object passed to the
      *      <tt>startElement</tt> callback.
      * 
      * @throws IndexOutOfBoundsException
      *      If the index is invalid.
      * @throws IllegalStateException
-     *      If this method is called from other {@link org.xml.sax.ContentHandler}
+     *      If this method is called from other {@link org.apache.xmlext.org.xml.sax.ContentHandler}
      *      methods.
      * 
      * @return

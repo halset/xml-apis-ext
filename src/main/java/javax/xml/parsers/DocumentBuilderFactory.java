@@ -21,6 +21,8 @@ package javax.xml.parsers;
 
 import javax.xml.validation.Schema;
 
+import org.xml.sax.SAXParseException;
+
 /**
  * Defines a factory API that enables applications to obtain a
  * parser that produces DOM object trees from XML documents.
@@ -364,8 +366,8 @@ public abstract class DocumentBuilderFactory {
 	 *     <code>true</code>: the implementation will limit XML processing to conform to implementation limits.
 	 *     Examples include entity expansion limits and XML Schema constructs that would consume large amounts of resources.
 	 *     If XML processing is limited for security reasons, it will be reported via a call to the registered
-	 *    {@link org.xml.sax.ErrorHandler#fatalError(SAXParseException exception)}.
-	 *     See {@link  DocumentBuilder#setErrorHandler(org.xml.sax.ErrorHandler errorHandler)}.
+	 *    {@link org.apache.xmlext.org.xml.sax.ErrorHandler#fatalError(SAXParseException exception)}.
+	 *     See {@link  DocumentBuilder#setErrorHandler(org.apache.xmlext.org.xml.sax.ErrorHandler errorHandler)}.
 	 *   </li>
 	 *   <li>
 	 *     <code>false</code>: the implementation will processing XML according to the XML specifications without
@@ -443,10 +445,10 @@ public abstract class DocumentBuilderFactory {
      * down to the application.
      * 
      * <p>When errors are found by the validator, the parser is responsible
-     * to report them to the user-specified {@link org.xml.sax.ErrorHandler}
+     * to report them to the user-specified {@link org.apache.xmlext.org.xml.sax.ErrorHandler}
      * (or if the error handler is not set, ignore them or throw them), just
      * like any other errors found by the parser itself.
-     * In other words, if the user-specified {@link org.xml.sax.ErrorHandler}
+     * In other words, if the user-specified {@link org.apache.xmlext.org.xml.sax.ErrorHandler}
      * is set, it must receive those errors, and if not, they must be
      * treated according to the implementation specific
      * default error handling rules.

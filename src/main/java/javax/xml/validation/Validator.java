@@ -23,11 +23,11 @@ import java.io.IOException;
 import javax.xml.transform.Result;
 import javax.xml.transform.Source;
 
-import org.w3c.dom.ls.LSResourceResolver;
-import org.xml.sax.ErrorHandler;
-import org.xml.sax.SAXException;
-import org.xml.sax.SAXNotRecognizedException;
-import org.xml.sax.SAXNotSupportedException;
+import org.apache.xmlext.org.w3c.dom.ls.LSResourceResolver;
+import org.apache.xmlext.org.xml.sax.ErrorHandler;
+import org.apache.xmlext.org.xml.sax.SAXException;
+import org.apache.xmlext.org.xml.sax.SAXNotRecognizedException;
+import org.apache.xmlext.org.xml.sax.SAXNotSupportedException;
 
 /**
  * <p>A processor that checks an XML document against {@link Schema}.</p>
@@ -197,7 +197,7 @@ public abstract class Validator {
      * @throws IOException
      *      If the validator is processing a
      *      {@link javax.xml.transform.sax.SAXSource} and the
-     *      underlying {@link org.xml.sax.XMLReader} throws an
+     *      underlying {@link org.apache.xmlext.org.xml.sax.XMLReader} throws an
      *      {@link IOException}.
      * 
      * @throws NullPointerException
@@ -238,13 +238,13 @@ public abstract class Validator {
      * behave as if the following {@link ErrorHandler} is set:
      * <pre>
      * class DraconianErrorHandler implements {@link ErrorHandler} {
-     *     public void fatalError( {@link org.xml.sax.SAXParseException} e ) throws {@link SAXException} {
+     *     public void fatalError( {@link org.apache.xmlext.org.xml.sax.SAXParseException} e ) throws {@link SAXException} {
      *         throw e;
      *     }
-     *     public void error( {@link org.xml.sax.SAXParseException} e ) throws {@link SAXException} {
+     *     public void error( {@link org.apache.xmlext.org.xml.sax.SAXParseException} e ) throws {@link SAXException} {
      *         throw e;
      *     }
-     *     public void warning( {@link org.xml.sax.SAXParseException} e ) throws {@link SAXException} {
+     *     public void warning( {@link org.apache.xmlext.org.xml.sax.SAXParseException} e ) throws {@link SAXException} {
      *         // noop
      *     }
      * }
@@ -287,7 +287,7 @@ public abstract class Validator {
      * behave as if the following {@link LSResourceResolver} is set:
      * <pre>
      * class DumbLSResourceResolver implements {@link LSResourceResolver} {
-     *     public {@link org.w3c.dom.ls.LSInput} resolveResource(
+     *     public {@link org.apache.xmlext.org.w3c.dom.ls.LSInput} resolveResource(
      *         String publicId, String systemId, String baseURI) {
      *         
      *         return null; // always return null
@@ -340,9 +340,9 @@ public abstract class Validator {
      *
      * @param name The feature name, which is a non-null fully-qualified URI.
      * @return The current value of the feature (true or false).
-     * @exception org.xml.sax.SAXNotRecognizedException If the feature
+     * @exception org.apache.xmlext.org.xml.sax.SAXNotRecognizedException If the feature
      *            value can't be assigned or retrieved.
-     * @exception org.xml.sax.SAXNotSupportedException When the
+     * @exception org.apache.xmlext.org.xml.sax.SAXNotSupportedException When the
      *            {@link Validator} recognizes the feature name but 
      *            cannot determine its value at this time.
      * @throws NullPointerException
@@ -372,9 +372,9 @@ public abstract class Validator {
      * @param name The feature name, which is a non-null fully-qualified URI.
      * @param value The requested value of the feature (true or false).
      * 
-     * @exception org.xml.sax.SAXNotRecognizedException If the feature
+     * @exception org.apache.xmlext.org.xml.sax.SAXNotRecognizedException If the feature
      *            value can't be assigned or retrieved.
-     * @exception org.xml.sax.SAXNotSupportedException When the
+     * @exception org.apache.xmlext.org.xml.sax.SAXNotSupportedException When the
      *            {@link Validator} recognizes the feature name but 
      *            cannot set the requested value.
      * @throws NullPointerException
@@ -402,9 +402,9 @@ public abstract class Validator {
      *
      * @param name The property name, which is a non-null fully-qualified URI.
      * @param object The requested value for the property.
-     * @exception org.xml.sax.SAXNotRecognizedException If the property
+     * @exception org.apache.xmlext.org.xml.sax.SAXNotRecognizedException If the property
      *            value can't be assigned or retrieved.
-     * @exception org.xml.sax.SAXNotSupportedException When the
+     * @exception org.apache.xmlext.org.xml.sax.SAXNotSupportedException When the
      *            {@link Validator} recognizes the property name but 
      *            cannot set the requested value.
      * @throws NullPointerException
@@ -432,9 +432,9 @@ public abstract class Validator {
      *
      * @param name The property name, which is a non-null fully-qualified URI.
      * @return The current value of the property.
-     * @exception org.xml.sax.SAXNotRecognizedException If the property
+     * @exception org.apache.xmlext.org.xml.sax.SAXNotRecognizedException If the property
      *            value can't be assigned or retrieved.
-     * @exception org.xml.sax.SAXNotSupportedException When the
+     * @exception org.apache.xmlext.org.xml.sax.SAXNotSupportedException When the
      *            XMLReader recognizes the property name but 
      *            cannot determine its value at this time.
      * @throws NullPointerException

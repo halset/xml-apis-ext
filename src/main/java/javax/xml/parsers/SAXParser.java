@@ -25,21 +25,21 @@ import java.io.InputStream;
 
 import javax.xml.validation.Schema;
 
-import org.xml.sax.HandlerBase;
-import org.xml.sax.InputSource;
-import org.xml.sax.Parser;
-import org.xml.sax.SAXException;
-import org.xml.sax.SAXNotRecognizedException;
-import org.xml.sax.SAXNotSupportedException;
-import org.xml.sax.XMLReader;
-import org.xml.sax.helpers.DefaultHandler;
+import org.apache.xmlext.org.xml.sax.HandlerBase;
+import org.apache.xmlext.org.xml.sax.InputSource;
+import org.apache.xmlext.org.xml.sax.Parser;
+import org.apache.xmlext.org.xml.sax.SAXException;
+import org.apache.xmlext.org.xml.sax.SAXNotRecognizedException;
+import org.apache.xmlext.org.xml.sax.SAXNotSupportedException;
+import org.apache.xmlext.org.xml.sax.XMLReader;
+import org.apache.xmlext.org.xml.sax.helpers.DefaultHandler;
 
 
 /**
- * Defines the API that wraps an {@link org.xml.sax.XMLReader}
+ * Defines the API that wraps an {@link org.apache.xmlext.org.xml.sax.XMLReader}
  * implementation class. In JAXP 1.0, this class wrapped the
- * {@link org.xml.sax.Parser} interface, however this interface was
- * replaced by the {@link org.xml.sax.XMLReader}. For ease
+ * {@link org.apache.xmlext.org.xml.sax.Parser} interface, however this interface was
+ * replaced by the {@link org.apache.xmlext.org.xml.sax.XMLReader}. For ease
  * of transition, this class continues to support the same name
  * and interface as well as supporting new methods.
  *
@@ -60,11 +60,11 @@ import org.xml.sax.helpers.DefaultHandler;
  * will be used.</p>
  *
  * As the content is parsed by the underlying parser, methods of the
- * given {@link org.xml.sax.HandlerBase} or the
- * {@link org.xml.sax.helpers.DefaultHandler} are called.<p>
+ * given {@link org.apache.xmlext.org.xml.sax.HandlerBase} or the
+ * {@link org.apache.xmlext.org.xml.sax.helpers.DefaultHandler} are called.<p>
  *
  * Implementors of this class which wrap an underlaying implementation
- * can consider using the {@link org.xml.sax.helpers.ParserAdapter}
+ * can consider using the {@link org.apache.xmlext.org.xml.sax.helpers.ParserAdapter}
  * class to initially adapt their SAX1 implementation to work under
  * this revised class.
  *
@@ -109,7 +109,7 @@ public abstract class SAXParser {
 
     /**
      * <p>Parse the content of the given {@link java.io.InputStream}
-     * instance as XML using the specified {@link org.xml.sax.HandlerBase}.
+     * instance as XML using the specified {@link org.apache.xmlext.org.xml.sax.HandlerBase}.
      * <i> Use of the DefaultHandler version of this method is recommended as
      * the HandlerBase class has been deprecated in SAX 2.0</i>.</p>
      *
@@ -121,7 +121,7 @@ public abstract class SAXParser {
      * @throws IOException If an IO error occurs interacting with the
      *   <code>InputStream</code>.
      * 
-     * @see org.xml.sax.DocumentHandler
+     * @see org.apache.xmlext.org.xml.sax.DocumentHandler
      */    
     public void parse(InputStream is, HandlerBase hb)
         throws SAXException, IOException {
@@ -135,7 +135,7 @@ public abstract class SAXParser {
 
     /**
      * <p>Parse the content of the given {@link java.io.InputStream}
-     * instance as XML using the specified {@link org.xml.sax.HandlerBase}.
+     * instance as XML using the specified {@link org.apache.xmlext.org.xml.sax.HandlerBase}.
      * <i> Use of the DefaultHandler version of this method is recommended as
      * the HandlerBase class has been deprecated in SAX 2.0</i>.</p>
      *
@@ -149,7 +149,7 @@ public abstract class SAXParser {
      *   <code>InputStream</code>.
      * @throws SAXException If any SAX errors occur during processing.
      * 
-     * @see org.xml.sax.DocumentHandler version of this method instead.
+     * @see org.apache.xmlext.org.xml.sax.DocumentHandler version of this method instead.
      */
     public void parse(
         InputStream is,
@@ -168,7 +168,7 @@ public abstract class SAXParser {
     /**
      * Parse the content of the given {@link java.io.InputStream}
      * instance as XML using the specified
-     * {@link org.xml.sax.helpers.DefaultHandler}.
+     * {@link org.apache.xmlext.org.xml.sax.helpers.DefaultHandler}.
      *
      * @param is InputStream containing the content to be parsed.
      * @param dh The SAX DefaultHandler to use.
@@ -177,7 +177,7 @@ public abstract class SAXParser {
      * @throws IOException If any IO errors occur.
      * @throws SAXException If any SAX errors occur during processing.
      * 
-     * @see org.xml.sax.DocumentHandler
+     * @see org.apache.xmlext.org.xml.sax.DocumentHandler
      */
     public void parse(InputStream is, DefaultHandler dh)
         throws SAXException, IOException {
@@ -192,7 +192,7 @@ public abstract class SAXParser {
     /**
      * Parse the content of the given {@link java.io.InputStream}
      * instance as XML using the specified
-     * {@link org.xml.sax.helpers.DefaultHandler}.
+     * {@link org.apache.xmlext.org.xml.sax.helpers.DefaultHandler}.
      *
      * @param is InputStream containing the content to be parsed.
      * @param dh The SAX DefaultHandler to use.
@@ -202,7 +202,7 @@ public abstract class SAXParser {
      * @throws IOException If any IO errors occur.
      * @throws SAXException If any SAX errors occur during processing.
      * 
-     * @see org.xml.sax.DocumentHandler version of this method instead.
+     * @see org.apache.xmlext.org.xml.sax.DocumentHandler version of this method instead.
      */
     public void parse(
         InputStream is,
@@ -221,7 +221,7 @@ public abstract class SAXParser {
     /**
      * Parse the content described by the giving Uniform Resource
      * Identifier (URI) as XML using the specified
-     * {@link org.xml.sax.HandlerBase}.
+     * {@link org.apache.xmlext.org.xml.sax.HandlerBase}.
      * <i> Use of the DefaultHandler version of this method is recommended as
      * the <code>HandlerBase</code> class has been deprecated in SAX 2.0</i>
      *
@@ -232,7 +232,7 @@ public abstract class SAXParser {
      * @throws IOException If any IO errors occur.
      * @throws SAXException If any SAX errors occur during processing.
      * 
-     * @see org.xml.sax.DocumentHandler
+     * @see org.apache.xmlext.org.xml.sax.DocumentHandler
      */
     public void parse(String uri, HandlerBase hb)
         throws SAXException, IOException {
@@ -247,7 +247,7 @@ public abstract class SAXParser {
     /**
      * Parse the content described by the giving Uniform Resource
      * Identifier (URI) as XML using the specified
-     * {@link org.xml.sax.helpers.DefaultHandler}.
+     * {@link org.apache.xmlext.org.xml.sax.helpers.DefaultHandler}.
      *
      * @param uri The location of the content to be parsed.
      * @param dh The SAX DefaultHandler to use.
@@ -256,7 +256,7 @@ public abstract class SAXParser {
      * @throws IOException If any IO errors occur.
      * @throws SAXException If any SAX errors occur during processing.
      * 
-     * @see org.xml.sax.DocumentHandler
+     * @see org.apache.xmlext.org.xml.sax.DocumentHandler
      */   
     public void parse(String uri, DefaultHandler dh)
         throws SAXException, IOException {
@@ -270,7 +270,7 @@ public abstract class SAXParser {
     
     /**
      * Parse the content of the file specified as XML using the
-     * specified {@link org.xml.sax.HandlerBase}.
+     * specified {@link org.apache.xmlext.org.xml.sax.HandlerBase}.
      * <i> Use of the DefaultHandler version of this method is recommended as
      * the HandlerBase class has been deprecated in SAX 2.0</i>
      *
@@ -281,7 +281,7 @@ public abstract class SAXParser {
      * @throws IOException If any IO errors occur.
      * @throws SAXException If any SAX errors occur during processing.
      * 
-     * @see org.xml.sax.DocumentHandler
+     * @see org.apache.xmlext.org.xml.sax.DocumentHandler
      */
     public void parse(File f, HandlerBase hb)
         throws SAXException, IOException {
@@ -301,7 +301,7 @@ public abstract class SAXParser {
     
     /**
      * Parse the content of the file specified as XML using the
-     * specified {@link org.xml.sax.helpers.DefaultHandler}.
+     * specified {@link org.apache.xmlext.org.xml.sax.helpers.DefaultHandler}.
      *
      * @param f The file containing the XML to parse
      * @param dh The SAX DefaultHandler to use.
@@ -310,7 +310,7 @@ public abstract class SAXParser {
      * @throws IOException If any IO errors occur.
      * @throws SAXException If any SAX errors occur during processing.
      * 
-     * @see org.xml.sax.DocumentHandler
+     * @see org.apache.xmlext.org.xml.sax.DocumentHandler
      */
     public void parse(File f, DefaultHandler dh)
         throws SAXException, IOException {
@@ -329,9 +329,9 @@ public abstract class SAXParser {
     }
     
     /**
-     * Parse the content given {@link org.xml.sax.InputSource}
+     * Parse the content given {@link org.apache.xmlext.org.xml.sax.InputSource}
      * as XML using the specified
-     * {@link org.xml.sax.HandlerBase}.
+     * {@link org.apache.xmlext.org.xml.sax.HandlerBase}.
      * <i> Use of the DefaultHandler version of this method is recommended as
      * the HandlerBase class has been deprecated in SAX 2.0</i>
      *
@@ -343,7 +343,7 @@ public abstract class SAXParser {
      * @throws IOException If any IO errors occur.
      * @throws SAXException If any SAX errors occur during processing.
      * 
-     * @see org.xml.sax.DocumentHandler
+     * @see org.apache.xmlext.org.xml.sax.DocumentHandler
      */
     public void parse(InputSource is, HandlerBase hb)
         throws SAXException, IOException {
@@ -362,9 +362,9 @@ public abstract class SAXParser {
     }
     
     /**
-     * Parse the content given {@link org.xml.sax.InputSource}
+     * Parse the content given {@link org.apache.xmlext.org.xml.sax.InputSource}
      * as XML using the specified
-     * {@link org.xml.sax.helpers.DefaultHandler}.
+     * {@link org.apache.xmlext.org.xml.sax.helpers.DefaultHandler}.
      *
      * @param is The InputSource containing the content to be parsed.
      * @param dh The SAX DefaultHandler to use.
@@ -374,7 +374,7 @@ public abstract class SAXParser {
      * @throws IOException If any IO errors occur.
      * @throws SAXException If any SAX errors occur during processing.
      * 
-     * @see org.xml.sax.DocumentHandler
+     * @see org.apache.xmlext.org.xml.sax.DocumentHandler
      */
     public void parse(InputSource is, DefaultHandler dh)
         throws SAXException, IOException {
@@ -401,10 +401,10 @@ public abstract class SAXParser {
      * 
      * @throws SAXException If any SAX errors occur during processing.
      */
-    public abstract org.xml.sax.Parser getParser() throws SAXException;
+    public abstract org.apache.xmlext.org.xml.sax.Parser getParser() throws SAXException;
 
     /**
-     * Returns the {@link org.xml.sax.XMLReader} that is encapsulated by the
+     * Returns the {@link org.apache.xmlext.org.xml.sax.XMLReader} that is encapsulated by the
      * implementation of this class.
      *
      * @return The XMLReader that is encapsulated by the
@@ -413,7 +413,7 @@ public abstract class SAXParser {
      * @throws SAXException If any SAX errors occur during processing.
      */
 
-    public abstract org.xml.sax.XMLReader getXMLReader() throws SAXException;
+    public abstract org.apache.xmlext.org.xml.sax.XMLReader getXMLReader() throws SAXException;
     
     /**
      * Indicates whether or not this parser is configured to
@@ -437,7 +437,7 @@ public abstract class SAXParser {
 
     /**
      * <p>Sets the particular property in the underlying implementation of
-     * {@link org.xml.sax.XMLReader}.
+     * {@link org.apache.xmlext.org.xml.sax.XMLReader}.
      * A list of the core features and properties can be found at
      * <a href="http://sax.sourceforge.net/?selected=get-set">
      * http://sax.sourceforge.net/?selected=get-set</a>.</p>
@@ -450,14 +450,14 @@ public abstract class SAXParser {
      * @throws SAXNotSupportedException When the underlying XMLReader
      *  recognizes the property name but doesn't support the property.
      *
-     * @see org.xml.sax.XMLReader#setProperty
+     * @see org.apache.xmlext.org.xml.sax.XMLReader#setProperty
      */
     public abstract void setProperty(String name, Object value)
         throws SAXNotRecognizedException, SAXNotSupportedException;
 
     /**
      * <p>Returns the particular property requested for in the underlying
-     * implementation of {@link org.xml.sax.XMLReader}.</p>
+     * implementation of {@link org.apache.xmlext.org.xml.sax.XMLReader}.</p>
      *
      * @param name The name of the property to be retrieved.
      * @return Value of the requested property.
@@ -467,7 +467,7 @@ public abstract class SAXParser {
      * @throws SAXNotSupportedException When the underlying XMLReader
      *  recognizes the property name but doesn't support the property.
      *
-     * @see org.xml.sax.XMLReader#getProperty
+     * @see org.apache.xmlext.org.xml.sax.XMLReader#getProperty
      */
     public abstract Object getProperty(String name)
         throws SAXNotRecognizedException, SAXNotSupportedException;

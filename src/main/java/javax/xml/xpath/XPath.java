@@ -18,8 +18,10 @@
 
 package javax.xml.xpath;
 
-import org.xml.sax.InputSource;
 import javax.xml.namespace.QName;
+
+import org.apache.xmlext.org.xml.sax.InputSource;
+
 import javax.xml.namespace.NamespaceContext;
 
 /**

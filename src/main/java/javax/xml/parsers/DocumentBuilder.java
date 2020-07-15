@@ -25,13 +25,12 @@ import java.io.InputStream;
 
 import javax.xml.validation.Schema;
 
-import org.w3c.dom.Document;
-import org.w3c.dom.DOMImplementation;
-
-import org.xml.sax.EntityResolver;
-import org.xml.sax.ErrorHandler;
-import org.xml.sax.InputSource;
-import org.xml.sax.SAXException;
+import org.apache.xmlext.org.w3c.dom.DOMImplementation;
+import org.apache.xmlext.org.w3c.dom.Document;
+import org.apache.xmlext.org.xml.sax.EntityResolver;
+import org.apache.xmlext.org.xml.sax.ErrorHandler;
+import org.apache.xmlext.org.xml.sax.InputSource;
+import org.apache.xmlext.org.xml.sax.SAXException;
 
 /**
  * Defines the API to obtain DOM Document instances from an XML
@@ -97,7 +96,7 @@ public abstract class DocumentBuilder {
      *  <code>InputStream</code>
      * @exception IOException If any IO errors occur.
      * @exception SAXException If any parse errors occur.
-     * @see org.xml.sax.DocumentHandler
+     * @see org.apache.xmlext.org.xml.sax.DocumentHandler
      */
     
     public Document parse(InputStream is)
@@ -121,7 +120,7 @@ public abstract class DocumentBuilder {
      * @return A new DOM Document object.
      * @exception IOException If any IO errors occur.
      * @exception SAXException If any parse errors occur.
-     * @see org.xml.sax.DocumentHandler
+     * @see org.apache.xmlext.org.xml.sax.DocumentHandler
      */
     
     public Document parse(InputStream is, String systemId)
@@ -145,7 +144,7 @@ public abstract class DocumentBuilder {
      * @return A new DOM Document object.
      * @exception IOException If any IO errors occur.
      * @exception SAXException If any parse errors occur.
-     * @see org.xml.sax.DocumentHandler
+     * @see org.apache.xmlext.org.xml.sax.DocumentHandler
      */
     
     public Document parse(String uri)
@@ -167,7 +166,7 @@ public abstract class DocumentBuilder {
      * @param f The file containing the XML to parse.
      * @exception IOException If any IO errors occur.
      * @exception SAXException If any parse errors occur.
-     * @see org.xml.sax.DocumentHandler
+     * @see org.apache.xmlext.org.xml.sax.DocumentHandler
      * @return A new DOM Document object.
      */
     
@@ -195,7 +194,7 @@ public abstract class DocumentBuilder {
      * @param is InputSource containing the content to be parsed.
      * @exception IOException If any IO errors occur.
      * @exception SAXException If any parse errors occur.
-     * @see org.xml.sax.DocumentHandler
+     * @see org.apache.xmlext.org.xml.sax.DocumentHandler
      * @return A new DOM Document object.
      */
     

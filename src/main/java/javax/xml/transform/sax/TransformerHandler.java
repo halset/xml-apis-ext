@@ -22,9 +22,9 @@ package javax.xml.transform.sax;
 import javax.xml.transform.Result;
 import javax.xml.transform.Transformer;
 
-import org.xml.sax.ContentHandler;
-import org.xml.sax.DTDHandler;
-import org.xml.sax.ext.LexicalHandler;
+import org.apache.xmlext.org.xml.sax.ContentHandler;
+import org.apache.xmlext.org.xml.sax.DTDHandler;
+import org.apache.xmlext.org.xml.sax.ext.LexicalHandler;
 
 /**
  * A TransformerHandler

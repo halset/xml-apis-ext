@@ -21,8 +21,8 @@ package javax.xml.transform.sax;
 
 import javax.xml.transform.Result;
 
-import org.xml.sax.ContentHandler;
-import org.xml.sax.ext.LexicalHandler;
+import org.apache.xmlext.org.xml.sax.ContentHandler;
+import org.apache.xmlext.org.xml.sax.ext.LexicalHandler;
 
 /**
  * <p>Acts as an holder for a transformation Result.</p>
@@ -46,7 +46,7 @@ public class SAXResult implements Result {
     }
 
     /**
-     * Create a SAXResult that targets a SAX2 {@link org.xml.sax.ContentHandler}.
+     * Create a SAXResult that targets a SAX2 {@link org.apache.xmlext.org.xml.sax.ContentHandler}.
      *
      * @param handler Must be a non-null ContentHandler reference.
      */
@@ -55,7 +55,7 @@ public class SAXResult implements Result {
     }
 
     /**
-     * Set the target to be a SAX2 {@link org.xml.sax.ContentHandler}.
+     * Set the target to be a SAX2 {@link org.apache.xmlext.org.xml.sax.ContentHandler}.
      *
      * @param handler Must be a non-null ContentHandler reference.
      */
@@ -64,7 +64,7 @@ public class SAXResult implements Result {
     }
 
     /**
-     * Get the {@link org.xml.sax.ContentHandler} that is the Result.
+     * Get the {@link org.apache.xmlext.org.xml.sax.ContentHandler} that is the Result.
      *
      * @return The ContentHandler that is to be transformation output.
      */
@@ -73,11 +73,11 @@ public class SAXResult implements Result {
     }
 
     /**
-     * Set the SAX2 {@link org.xml.sax.ext.LexicalHandler} for the output.
+     * Set the SAX2 {@link org.apache.xmlext.org.xml.sax.ext.LexicalHandler} for the output.
      *
      * <p>This is needed to handle XML comments and the like.  If the
      * lexical handler is not set, an attempt should be made by the
-     * transformer to cast the {@link org.xml.sax.ContentHandler} to a
+     * transformer to cast the {@link org.apache.xmlext.org.xml.sax.ContentHandler} to a
      * <code>LexicalHandler</code>.</p>
      *
      * @param handler A non-null <code>LexicalHandler</code> for
@@ -88,7 +88,7 @@ public class SAXResult implements Result {
     }
 
     /**
-     * Get a SAX2 {@link org.xml.sax.ext.LexicalHandler} for the output.
+     * Get a SAX2 {@link org.apache.xmlext.org.xml.sax.ext.LexicalHandler} for the output.
      *
      * @return A <code>LexicalHandler</code>, or null.
      */
@@ -98,7 +98,7 @@ public class SAXResult implements Result {
 
     /**
      * Method setSystemId Set the systemID that may be used in association
-     * with the {@link org.xml.sax.ContentHandler}.
+     * with the {@link org.apache.xmlext.org.xml.sax.ContentHandler}.
      *
      * @param systemId The system identifier as a URI string.
      */

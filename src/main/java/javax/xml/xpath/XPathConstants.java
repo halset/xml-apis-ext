@@ -60,14 +60,14 @@ public class XPathConstants {
     /**
      * <p>The XPath 1.0 NodeSet data type.</p>
      * 
-     * <p>Maps to Java {@link org.w3c.dom.NodeList}.</p>
+     * <p>Maps to Java {@link org.apache.xmlext.org.w3c.dom.NodeList}.</p>
      */
     public static final QName NODESET = new QName("http://www.w3.org/1999/XSL/Transform", "NODESET");
 
     /**
      * <p>The XPath 1.0 NodeSet data type.
      * 
-     * <p>Maps to Java {@link org.w3c.dom.Node}.</p>
+     * <p>Maps to Java {@link org.apache.xmlext.org.w3c.dom.Node}.</p>
      */
     public static final QName NODE = new QName("http://www.w3.org/1999/XSL/Transform", "NODE");
 

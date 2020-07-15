@@ -21,7 +21,7 @@ package javax.xml.transform.dom;
 
 import javax.xml.transform.Source;
 
-import org.w3c.dom.Node;
+import org.apache.xmlext.org.w3c.dom.Node;
 
 /**
  * <p>Acts as a holder for a transformation Source tree in the
@@ -60,7 +60,7 @@ public class DOMSource implements Source {
      * <p>Zero-argument default constructor.  If this constructor is used, and
      * no DOM source is set using {@link #setNode(Node node)} , then the
      * <code>Transformer</code> will
-     * create an empty source {@link org.w3c.dom.Document} using
+     * create an empty source {@link org.apache.xmlext.org.w3c.dom.Document} using
      * {@link javax.xml.parsers.DocumentBuilder#newDocument()}.</p>
      *
      * @see javax.xml.transform.Transformer#transform(Source xmlSource, Result outputTarget)
