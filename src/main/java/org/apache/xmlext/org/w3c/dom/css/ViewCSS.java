@@ -13,8 +13,7 @@
 package org.apache.xmlext.org.w3c.dom.css;
 
 import org.w3c.dom.Element;
-import org.apache.xmlext.org.w3c.dom.views.AbstractView;
-import org.apache.xmlext.org.w3c.dom.css.CSSStyleDeclaration;
+import org.w3c.dom.views.AbstractView;
 
 /**
  *  This interface represents a CSS view. The <code>getComputedStyle</code> 

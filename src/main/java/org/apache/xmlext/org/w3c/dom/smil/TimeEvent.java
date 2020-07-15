@@ -12,7 +12,7 @@
 package org.apache.xmlext.org.w3c.dom.smil;
 
 import org.w3c.dom.events.Event;
-import org.apache.xmlext.org.w3c.dom.views.AbstractView;
+import org.w3c.dom.views.AbstractView;
 
 /**
  * The <code>TimeEvent</code> interface provides specific contextual
